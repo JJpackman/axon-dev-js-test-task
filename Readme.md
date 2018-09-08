@@ -27,32 +27,32 @@ Create a page consisting of three elements:
 
 1. Table on which user data is displayed.
 2. Form for creating new user.
-3. Block with table summary.
-   Elements description:
-
-   1. Table
-      a. Display table of users with the following cells:
-      i. First name
-      ii. Last name
-      iii. Date of birth in format DD/MM/YYYY
-      iv. Location
-      b. Data should be loaded from server. No pagination, sorting etc. needed.
-      c. Each row should have a “delete” button in front of it. On clicking “delete” button
+3. Block with table summary.<br>
+  Elements description:<br>
+   3.1 Table
+      - Display table of users with the following cells:
+      - First name
+      - Last name
+      - Date of birth in format DD/MM/YYYY
+      - Location
+      - Data should be loaded from server. No pagination, sorting etc. needed.
+      - Each row should have a “delete” button in front of it. On clicking “delete” button
       user should be deleted from database and the table (with summary) should be
       refreshed.
 
-   2. Form
-      a. Form should consist of 3 text inputs, 1 date input for date-of-birth and 1 submit
+   3.2 Form
+      - Form should consist of 3 text inputs, 1 date input for date-of-birth and 1 submit
       button.
-      b. Submit button should be disabled until all fields are filled.
-      c. On clicking submit button new user should be created.
-      d. After successful submit the table (with summary) should be refreshed.
-   3. Summary
-      a. Display summary in any convenient way. You may want to use <dl> <dt> <dd>
+      - Submit button should be disabled until all fields are filled.
+      - On clicking submit button new user should be created.
+      - After successful submit the table (with summary) should be refreshed.
+      
+   3.3 Summary
+      - Display summary in any convenient way. You may want to use ```<dl> <dt> <dd>```
       for it. Summary consists of 3 values aggregated from the table data.
-      b. First one is “Count of users from Kiev or kiev” of numeric type.
-      c. Second one is “Sum of ages of three oldest users from table” of numeric type.
-      d. Third one is “Longest string of first name + last name pair” of string type.
+      - First one is “Count of users from Kiev or kiev” of numeric type.
+      - Second one is “Sum of ages of three oldest users from table” of numeric type.
+      - Third one is “Longest string of first name + last name pair” of string type.
 
 Please, do not make things not described in items above.<br>
 If data.json file accidentally breaks, replace it with a fresh backup from backup/data.json.
